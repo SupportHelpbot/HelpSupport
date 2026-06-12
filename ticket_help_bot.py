@@ -9,7 +9,7 @@ from datetime import datetime
 import telebot
 from telebot import types
 
-TOKEN = "ВСТАВЬ_ТОКЕН_БОТА"
+TOKEN = os.getenv("TOKEN")
 
 bot = telebot.TeleBot(TOKEN, parse_mode="HTML")
 
